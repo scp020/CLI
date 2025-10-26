@@ -2,20 +2,20 @@ from setuptools import setup, find_packages
 
 setup(
     name='cli',
-    version='0.1.1',
+    version='1.0.0',
     packages=find_packages(),
     install_requires=[
         'requests',
     ],
     entry_points={
         'console_scripts': [
-            'cli=cli.main:run',
+            'cli=cli.main:main',
         ],
     },
-    author='Haiyan Yang',
-    author_email='her email',
-    description='一个每日一笑的Python小程序',
+    author='Tianyi Zhao',
+    author_email='33299235@qq.com',
+    description='CLI 时间管理终端程序',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/scp020/daily_joke',
+    url='https://github.com/scp020/CLI',
 )

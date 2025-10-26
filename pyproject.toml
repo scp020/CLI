@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cli"
+dynamic = ["version"]
+description = "CLI 时间管理终端程序"
+authors = [
+    {name = "Tianyi Zhao", email = "33299235@qq.com"},
+]
+dependencies = []
+requires-python = ">=3.6"
+readme = "README.md"
+keywords = ["cli", "task", "management", "productivity", "due dates", "sorting"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+[project.scripts]
+cli = "cli.main:main"

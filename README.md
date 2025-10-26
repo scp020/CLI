@@ -27,6 +27,13 @@ cd CLI
 pip install -e .
 ```
 
+If you want, you can do this before `pip install`:
+
+```bash
+python -m venv env
+source env/bin/activate
+```
+
 Check if the installation was successful: `pip list | grep cli`.
 
 ## Usage
